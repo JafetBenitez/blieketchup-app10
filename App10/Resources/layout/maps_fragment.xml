@@ -3,13 +3,7 @@
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                tools:context="App10.App10.MapsFragment">
+     >
 
-
-  <fragment
-    android:id="@+id/darkMap"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:name="com.google.android.gms.maps.MapFragment"/>
 
 </RelativeLayout>

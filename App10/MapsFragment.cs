@@ -11,19 +11,23 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 using Android.Gms.Maps;
+using Android.Gms.Maps.Model;
 
 namespace App10
 {
-    public class MapsFragment : Fragment, IOnMapReadyCallback
+    public class MapsFragment : Fragment
     {
-        public GoogleMap cMap;
 
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             // Create your fragment here
-            SetupMap();
+            //SetupMap();
+            //this.fragment = new MpFrg();
+            //FragmentManager.BeginTransaction()
+            //.Replace(Resource.Id.content_frame, fragment)
+            //.Commit();
         }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -34,16 +38,11 @@ namespace App10
             //return base.OnCreateView(inflater, container, savedInstanceState);
         }
 
-        public void OnMapReady(GoogleMap googleMap)
-        {
-            //googleMap.SetMapStyle(MapS);
-            this.cMap = googleMap;
-        }
 
-        private void SetupMap() {
-            if (cMap == null) {
-                FragmentManager.FindFragmentById<MapFragment>(Resource.Id.darkMap).GetMapAsync(this);
-            }
-        }
+        //private void SetupMap() {
+        //    if (cMap == null) {
+        //        FragmentManager.FindFragmentById<MapFragment>(Resource.Layout.mpfrg).GetMapAsync(this);
+        //    }
+        //}
     }
 }

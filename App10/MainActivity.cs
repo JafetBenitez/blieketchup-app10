@@ -7,12 +7,15 @@ using Android.Widget;
 using Android.OS;
 using Android.Support.V7.App;
 using Android.Support.Design.Widget;
+using Android.Gms.Maps;
 
 namespace App10
 {
     [Activity(Label = "App10", MainLauncher = true, Icon = "@mipmap/ic_launcher", Theme = "@style/Theme.AppCompat.Light.NoActionBar")]
     public class MainActivity : AppCompatActivity
+
     {
+        
 
 
         protected override void OnCreate(Bundle bundle)
@@ -30,11 +33,12 @@ namespace App10
             };
 
             LoadFragment(Resource.Id.action_map);
-
+            
 
         }
 
-        
+
+
         void LoadFragment(int id)
                 {
                     Fragment fragment = null;
@@ -44,8 +48,8 @@ namespace App10
                             fragment = new PreferencesFragment();
                             break;
                         case Resource.Id.action_map:
-                            fragment = new MapsFragment();
-                            break;
+                            StartActivity(typeof(Map));
+                        break;
                         case Resource.Id.action_recomendations:
                             fragment = new RecomendationFragment();
                             break;
@@ -58,6 +62,8 @@ namespace App10
                         .Replace(Resource.Id.content_frame, fragment)
                         .Commit();
                 }
+
+
     }
 }
 
