@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.microsoft.com/apk/res-auto">
+  <item
+      android:id="@+id/action_preferences"
+      android:enabled="true"
+      android:icon="@drawable/icon"
+      android:title="Preferencias"
+      app:showAsAction="ifRoom"/>
+  <item
+    android:id="@+id/action_map"
+    android:enabled="true"
+    android:icon="@drawable/icon"
+    android:title="Cerca de mí"
+    app:showAsAction="ifRoom"/>
+  
+  <item
+    android:id="@+id/action_recomendations"
+    android:enabled="true"
+    android:icon="@drawable/icon"
+    android:title="Recomendaciones"
+    app:showAsAction="ifRoom"/>
+</menu>
