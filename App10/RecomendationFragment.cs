@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace App10
 {
-    public class Recomendation : Fragment
+    public class RecomendationFragment : Fragment
     {
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -26,8 +26,9 @@ namespace App10
         {
             // Use this to return your custom view for this Fragment
             // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-
-            return base.OnCreateView(inflater, container, savedInstanceState);
-        }
+            return inflater.Inflate(Resource.Layout.recomendation_fragment, container, false);
+        
+        //return base.OnCreateView(inflater, container, savedInstanceState);
+    }
     }
 }

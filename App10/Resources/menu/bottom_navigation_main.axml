@@ -4,20 +4,20 @@
   <item
       android:id="@+id/action_preferences"
       android:enabled="true"
-      android:icon="@drawable/icon"
+      android:icon="@drawable/ic_action_favorite_border"
       android:title="Preferencias"
       app:showAsAction="ifRoom"/>
   <item
     android:id="@+id/action_map"
     android:enabled="true"
-    android:icon="@drawable/icon"
+    android:icon="@drawable/ic_action_explore"
     android:title="Cerca de mí"
     app:showAsAction="ifRoom"/>
   
   <item
     android:id="@+id/action_recomendations"
     android:enabled="true"
-    android:icon="@drawable/icon"
+    android:icon="@drawable/ic_action_hearing"
     android:title="Recomendaciones"
     app:showAsAction="ifRoom"/>
 </menu>
